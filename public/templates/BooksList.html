@@ -1,0 +1,27 @@
+﻿<div class="container">
+    <ul class="thumbnail">
+        <li ng-repeat="book in books" class="span6">
+            <!-- <a href="book/{{book.id}}">-->
+            <div class="well hoverwell">
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <img ng-src="{{book.photoUrl}}" />
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <a href="#/book/{{book.id}}">
+                                <h2 class="span6">{{book.name}}</h2>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <span class="span1">By:</span>
+                            <span>{{book.authorName}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--</a>-->
+        </li>
+    </ul>
+</div>
